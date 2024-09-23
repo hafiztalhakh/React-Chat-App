@@ -1,10 +1,20 @@
 body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   height: 100vh;
   background-image: url('../public/assets/bg.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
 }
 
 .container {
@@ -16,4 +26,124 @@ body {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: 12px;
+}
+
+.list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .chatList {
+    flex: 1;
+    overflow: scroll;
+
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+
+      .searchBar {
+        display: flex;
+        flex: 1;
+        background-color: rgba(17, 25, 40, 0.5);
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 10px;
+
+        input {
+          flex: 1;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: #fff;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .add-user {
+        width: 20px;
+        height: 20px;
+        background-color: rgba(17, 25, 40, 0.5);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      cursor: pointer;
+      border-bottom: 1px solid #dddddd35;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        span {
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+.userInfo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 20px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+}
+
+.chat {
+  flex: 2;
+}
+
+.chat-info {
+  flex: 1;
 }
