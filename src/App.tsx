@@ -1,13 +1,11 @@
-import Chat from './components/chat';
-import ChatInfo from './components/chat_info';
-import List from './components/list';
+import './App.css';
 
 function App() {
   return (
     <div className='container'>
-      <List />
-      <Chat />
-      <ChatInfo />
+      <div className='leftSidePanel'>Left Container</div>
+      <div className='chatContainer'>Chat Container</div>
+      <div className='chatInfoContainer'>Chat Info Container</div>
     </div>
   );
 }

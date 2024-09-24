@@ -17,7 +17,7 @@ p {
   margin: 0;
 }
 
-.container {
+/* .container {
   display: flex;
   width: 90vw;
   height: 90vh;
@@ -26,9 +26,9 @@ p {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: 12px;
-}
+} */
 
-.list {
+/* .list {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -146,4 +146,4 @@ p {
 
 .chat-info {
   flex: 1;
-}
+} */
