@@ -179,7 +179,7 @@
       gap: 10px;
       margin-bottom: 10px;
 
-      &:last-child{
+      &:last-child {
         margin: 0;
       }
 
@@ -256,6 +256,13 @@
     .emojiButton {
       box-shadow: none;
       border: none;
+      position: relative;
+
+      .emojiPicker {
+        position: absolute;
+        bottom: 50px;
+        right: 0px;
+      }
     }
 
     .sendButton {
