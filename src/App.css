@@ -297,6 +297,137 @@
 
 .chatInfoContainer {
   flex: 1;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #dddddd35;
+
+    .avatar {
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+
+    .accordionItem {
+      h2 {
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          box-shadow: none;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+
+          span {
+            color: #fff;
+            font-size: 20px;
+          }
+
+          &::after {
+            content: '';
+            border-radius: 50%;
+            background-color: #1119284d;
+            background-image: url('../public/assets/arrowUp.png');
+            background-position: center center;
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 40px;
+            transform: rotate(180deg);
+            transition: all 0.5s;
+          }
+
+          &.active {
+            &::after {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+
+      .photosList {
+        margin: 20px 0 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            object-fit: cover;
+          }
+
+          span {
+            font-size: 16px;
+            font-weight: 300;
+          }
+
+          button {
+            position: absolute;
+            background-color: #1119284d;
+            border-radius: 50%;
+            padding: 12px;
+            right: 6px;
+            width: 40px;
+            height: 40px;
+
+            img {
+              width: 14px;
+              height: 14px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      /* .photos {
+        display: flex;
+        gap: 10px;
+
+        .photoDetails {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+          }
+        }
+      } */
+    }
+  }
 }
 
 .actionButtonsList {
