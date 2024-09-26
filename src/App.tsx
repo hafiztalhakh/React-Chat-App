@@ -1,16 +1,18 @@
 import './App.css';
-import Header from './components/header';
-import Search from './components/search';
-import ChatList from './components/chat/list';
-import ChatHeader from './components/chat/header';
-import ChatInputBox from './components/chat/chat_input_box';
-import ChatBox from './components/chat/chat_box';
-import ChatInfo from './components/chat/info';
+import Login from './components/login';
+// import Header from './components/header';
+// import Search from './components/search';
+// import ChatList from './components/chat/list';
+// import ChatHeader from './components/chat/header';
+// import ChatInputBox from './components/chat/chat_input_box';
+// import ChatBox from './components/chat/chat_box';
+// import ChatInfo from './components/chat/info';
 
 function App() {
   return (
-    <div className='container'>
-      <div className='leftSidePanel'>
+    <div className='loginContainer'>
+      <Login />
+      {/* <div className='leftSidePanel'>
         <Header />
         <Search />
         <ChatList />
@@ -22,7 +24,7 @@ function App() {
       </div>
       <div className='chatInfoContainer'>
         <ChatInfo />
-      </div>
+      </div> */}
     </div>
   );
 }
