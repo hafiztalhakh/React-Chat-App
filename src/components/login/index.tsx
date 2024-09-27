@@ -1,6 +1,6 @@
 const Login = () => {
   return (
-    <div className='wrapper'>
+    <div className='loginWrapper'>
       <div className='text'>
         <h2>Login</h2>
         <p>React Realtime-Chat Application</p>

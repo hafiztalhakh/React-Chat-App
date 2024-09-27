@@ -1,4 +1,13 @@
+import { useState } from 'react';
+import AddUser from '../add_user';
+
 const Search = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setOpen((prevState) => !prevState);
+  };
+
   return (
     <div className='searchContainer'>
       <div className='searchBox'>
@@ -6,10 +15,14 @@ const Search = () => {
         <input type='text' placeholder='Seach' />
       </div>
       <div className='buttonContainer'>
-        <button type='button'>
-          <img src='/assets/plus.png' alt='PlusIcon' />
+        <button className='iconButton' type='button' onClick={toggleOpen}>
+          <img
+            src={open ? '/assets/minus.png' : '/assets/plus.png'}
+            alt='PlusIcon'
+          />
         </button>
       </div>
+      {open && <AddUser />}
     </div>
   );
 };
